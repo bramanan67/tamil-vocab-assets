@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #fef6ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #253b6e;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px 16px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-image-wrapper {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f3f4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+}
+
+#card-image {
+  max-width: 100%;
+  max-height: 220px;
+  display: block;
+}
+
+.card-text {
+  margin-top: 4px;
+}
+
+.label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7a819a;
+  margin-bottom: 4px;
+}
+
+.label.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tamil-word {
+  font-size: 2rem;
+  color: #20254a;
+  margin-bottom: 10px;
+}
+
+.english-word {
+  font-size: 1.1rem;
+  color: #374162;
+}
+
+.hidden {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.nav-btn,
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  flex: 1;
+  background: #e4e7ff;
+  color: #253b6e;
+}
+
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.primary-btn {
+  flex: 1.4;
+  background: #4d63ff;
+  color: white;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  background: #eef0ff;
+  color: #353e81;
+}
+
+.progress {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #7a819a;
+}
+
+@media (max-width: 400px) {
+  .tamil-word {
+    font-size: 1.7rem;
+  }
+
+  .english-word {
+    font-size: 1rem;
+  }
+}
