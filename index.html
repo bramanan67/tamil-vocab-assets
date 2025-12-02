@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tamil Flashcards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="title">Tamil Flashcards</h1>
+
+    <div class="card">
+      <div class="card-image-wrapper">
+        <img id="card-image" alt="Flashcard image" />
+      </div>
+
+      <div class="card-text">
+        <div class="label">Tamil</div>
+        <div id="card-tamil" class="tamil-word"></div>
+
+        <div class="label row">
+          <span>English</span>
+          <button id="toggle-meaning" class="secondary-btn">Show</button>
+        </div>
+        <div id="card-english" class="english-word hidden"></div>
+      </div>
+
+      <div class="controls">
+        <button id="prev-btn" class="nav-btn">⟵ Prev</button>
+        <button id="play-btn" class="primary-btn">🔊 Play Sound</button>
+        <button id="next-btn" class="nav-btn">Next ⟶</button>
+      </div>
+
+      <div class="progress">
+        <span id="progress-text"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
